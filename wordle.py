@@ -3,10 +3,10 @@ kl = input('Enter the letters in the correct positions. Write a period in places
 cl = input('Enter the letters you know, but do not know their exact location\n')
 ncl = input('Enter the letters that cannot be in the word\n')
 print('\nResults:')
-sol = True
 count = 0
 for line in ofile:
     line = line.strip()
+    sol=True
     for c in range(len(cl)):
         if cl[c] in line:
             sol=True
